@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20dip">
+    	<TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="総額" android:textColor="#000000"></TextView>
+    	<EditText android:id="@+id/EditText01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:numeric="integer|signed|decimal" android:inputType="number" android:layout_marginLeft="10px" android:text="0"></EditText>
+	</LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人数" android:textColor="#000000"></TextView>
+        <EditText android:id="@+id/EditText02" android:layout_height="wrap_content" android:numeric="decimal" android:layout_width="100px" android:layout_marginLeft="10px" android:text="3"></EditText>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="先払い額" android:textColor="#000000"></TextView>
+        <EditText android:id="@+id/EditText03" android:layout_height="wrap_content" android:numeric="decimal" android:layout_width="fill_parent" android:text="0" android:layout_marginLeft="10px"></EditText>
+    </LinearLayout>
+    
+<CheckBox android:text="割引設定" android:id="@+id/CheckBox01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#000000" android:textSize="15px" android:layout_marginTop="25dip"></CheckBox>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/TextView04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="適用人数" android:textColor="#000000"></TextView>
+        <EditText android:id="@+id/EditText04" android:editable="false" android:layout_height="wrap_content" android:layout_width="60px" android:inputType="none" android:enabled="false"></EditText>
+        <TextView android:id="@+id/TextView05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="割引率(%)" android:textColor="#000000" android:layout_marginLeft="20px"></TextView>
+        <EditText android:id="@+id/EditText05" android:editable="false" android:layout_height="wrap_content" android:layout_width="60px" android:inputType="none" android:enabled="false"></EditText>
+    </LinearLayout>
+
+        <TextView android:id="@+id/TextView06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="※適用なしで算出された値から指定された割引率を引いて、再計算します" android:textColor="#000000"></TextView>
+
+<Button android:id="@+id/Button01" android:layout_width="200dip" android:layout_height="wrap_content" android:layout_marginTop="30px" android:text="計算！"
+android:onClick="button1ClickHandler"></Button>
+
+</LinearLayout>
