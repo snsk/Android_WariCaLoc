@@ -1,5 +1,11 @@
 package jp.moo.snsk;
 
+/*
+ * http://d.hatena.ne.jp/shinsuku/20110718/p3
+ * adb shell am instrument jp.moo.snsk/com.google.android.testing.nativedriver.server.ServerInstrumentation
+ * adb forward tcp:54129 tcp:54129
+ */
+
 import java.util.List;
 
 import com.google.android.testing.nativedriver.client.AndroidNativeDriver;
